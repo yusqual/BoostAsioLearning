@@ -81,4 +81,7 @@ package-lock.json
 node_modules
 
 # Cmake
-.out/
+out/
+
+# test dir
+a_test/

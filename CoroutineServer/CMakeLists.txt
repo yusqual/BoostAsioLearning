@@ -2,13 +2,17 @@
 # 设置文件名词
 set (appName CoroutineServer)
 
+# C++标准, 协程需要C++20
+set (CMAKE_CXX_STANDARD 20)
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # 指定 vcpkg 的工具链文件  
 set(CMAKE_TOOLCHAIN_FILE "D:/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")  
 
 set(CMAKE_PREFIX_PATH "D:/vcpkg/installed/x64-windows/share")
 
 # 包含库目录
-include_directories ("./")
+# include_directories ("./")
 
 
 # 查找Boost库，添加所需的组件  
