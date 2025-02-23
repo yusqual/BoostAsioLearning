@@ -1,6 +1,6 @@
 
 # 设置文件名词
-set (appName coroution_server)
+set (appName CoroutineServer)
 
 # 指定 vcpkg 的工具链文件  
 set(CMAKE_TOOLCHAIN_FILE "D:/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")  
