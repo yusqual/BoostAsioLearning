@@ -23,7 +23,6 @@ public:
 		m_cur_len = 0;
 	}
 
-protected:
 	short m_total_len;
 	short m_cur_len;
 	char* m_data;
@@ -34,7 +33,6 @@ class RecvNode : public MsgNode {
 public:
 	RecvNode(short max_len, short msg_id);
 
-private:
 	short m_msg_id;
 };
 
@@ -42,6 +40,6 @@ private:
 class SendNode : public MsgNode {
 public:
 	SendNode(const char* msg, short max_len, short msg_id);
-private:
+
 	short m_msg_id;
 };

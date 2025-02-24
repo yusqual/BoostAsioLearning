@@ -18,5 +18,5 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 # 包含子项目。
-# add_subdirectory ("boost_test")
 add_subdirectory ("CoroutineServer")
+add_subdirectory ("TestClient")

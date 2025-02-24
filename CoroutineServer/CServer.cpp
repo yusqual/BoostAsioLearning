@@ -19,7 +19,7 @@ void CServer::ClearSession(std::string sessionId) {
 
 void CServer::HandleAccept(std::shared_ptr<CSession> new_session, const boost::system::error_code& error) {
 	if (!error) {
-		// 连接成功后让session处理通话
+		// 连接成功后让session处理通话, Start()中采用协程的方式
 		new_session->Start();
 		// 将新连接以及uuid加入map
 		std::lock_guard<std::mutex> lock(m_mutex);
